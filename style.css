@@ -467,8 +467,8 @@ section {
   color: #176fe1;
   transform: rotate(1turn) scale(1.1);
 }
-.s-icons .fa-instagram-square:hover {
-  color: #8a3ab9;
+.s-icons .fa-github-square:hover {
+  color: grey;
   transform: rotate(1turn) scale(1.1);
 }
 .s-icons .fa-whatsapp-square:hover {
@@ -553,7 +553,7 @@ section {
     margin: 5px auto 25px;
   }
   .cards .content .card {
-    flex: unset;
+    flex: unset !;
   }
   .main {
     justify-content: center !important;
