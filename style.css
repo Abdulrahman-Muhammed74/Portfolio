@@ -311,10 +311,9 @@ section {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.45);
   background-blend-mode: overlay;
-  
+
   height: 100vh;
   position: relative;
-
 }
 
 .project-card {
@@ -477,7 +476,6 @@ section {
 }
 .swiper-navBtn:hover {
   color: var(--main-color) !important;
-
 }
 
 /*media quieries*/
@@ -491,14 +489,30 @@ section {
   header nav ul {
     display: none;
   }
-  header nav .toggle-menu:hover + ul {
+  nav {
+    cursor: pointer;
+  }
+  nav ul li a {
+    color: white !important;
+  }
+  .menuClick :where(ul) {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 100%;
-    background-color: rgb(0 0 0 / 20%);
+    background-color: #003865;
+    opacity: 0.9;
+    padding: 5px;
+  }
+  .navigation a:hover {
+    color: #eee;
+    transform: translateY(-2px);
+    border-bottom: 1px solid #eee;
+  }
+  header {
+    flex-direction: row-reverse;
   }
   section {
     padding: 80px 20px;
@@ -521,6 +535,9 @@ section {
   }
   .cards .content .card {
     flex: unset !;
+  }
+  .main {
+    justify-content: center !important;
   }
 }
 @media (max-width: 1153px) {

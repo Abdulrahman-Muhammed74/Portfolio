@@ -1,3 +1,26 @@
+
+
+let navBar = document.querySelector(".navigation"); 
+
+function toggleMenu() {
+  navBar.addEventListener("click", function () {
+    if (navBar.classList.contains("menuClick")) {
+      navBar.classList.remove("menuClick");
+    } else {
+      navBar.classList.add("menuClick");
+    }
+  });
+}
+toggleMenu();
+
+
+
+
+
+
+
+
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 40,
