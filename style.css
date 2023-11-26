@@ -62,7 +62,7 @@ ul {
   width: 90px;
   height: 1px;
   bottom: -4px;
-  color: #eee !important;
+  background-color: #eee !important;
 }
 
 header {
@@ -326,6 +326,7 @@ section {
   z-index: 1;
   overflow: hidden;
   border: none;
+  box-shadow: 0 10px 10px rgba(1, 1, 1, 25%);
 }
 .project-card:hover {
   transform: scale(1.1);
