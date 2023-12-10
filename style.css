@@ -44,7 +44,7 @@ ul {
 .tittle_2 {
   display: flex;
   justify-content: center;
-  color: #eee !important;
+  color: rgb(189, 189, 189) !important;
   font-size: 1.5em;
   font-weight: 800;
   margin-bottom: 80px;
@@ -76,16 +76,6 @@ header nav .toggle-menu {
   font-size: 22px;
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
-  header {
-    padding: 10px 50px;
-  }
-}
-@media (min-width: 767px) {
-  header nav .toggle-menu {
-    display: none;
-  }
-}
 header nav a {
   display: flex;
 }
@@ -115,8 +105,7 @@ header nav a {
   transform: translateY(-3px);
   border-bottom: 1px solid rgb(121, 2, 121);
 }
-/*end header*/
-/*start main section*/
+
 section {
   padding: 80px 150px;
 }
@@ -133,15 +122,6 @@ section {
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
 .main {
   width: 100%;
   height: 100vh;
@@ -218,20 +198,13 @@ section {
 .cards {
   background-image: url("images/74.webp");
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   position: relative;
   text-align: center;
   width: 100%;
   min-height: 100vh;
-}
-.cards::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  top: 0;
-  left: 0;
-  background-color: rgb(0 0 0 / 50%);
 }
 .cards .content {
   display: flex;
@@ -325,12 +298,9 @@ section {
 }
 
 .projects {
-  background-image: url("images/wall.jpeg");
+  background-color: #1b1e27;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  background-blend-mode: overlay;
-
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -377,8 +347,7 @@ section {
 .project-card .pinfo a:hover {
   color: black;
 }
-/*end project*/
-/*start contact*/
+
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -441,8 +410,6 @@ section {
   font-weight: bold;
 }
 
-/*end contact*/
-/*start footer*/
 .footer {
   background-color: #1b1e27;
   color: white;
@@ -558,13 +525,13 @@ section {
   .main {
     justify-content: center !important;
   }
-  .main h2,.main h3{
+  .main h2,
+  .main h3 {
     font-size: 18px;
   }
-  .main h2 span{
+  .main h2 span {
     font-size: 26px;
   }
-  
 }
 @media (max-width: 1153px) {
   section .img img {
@@ -592,5 +559,25 @@ section {
   .footer-title {
     font-size: 0.7em;
     font-weight: 500;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  header {
+    padding: 10px 50px;
+  }
+}
+@media (min-width: 767px) {
+  header nav .toggle-menu {
+    display: none;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
   }
 }

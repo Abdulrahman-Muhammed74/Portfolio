@@ -13,14 +13,6 @@ function toggleMenu() {
 }
 toggleMenu();
 
-
-
-
-
-
-
-
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 40,
